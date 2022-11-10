@@ -19,6 +19,11 @@ body {
   align-items: center;
 }
 
+.slider {
+  display: flex;
+  transition: all 1s ease;
+}
+
 .top {
   display: flex;
   align-items: center;
@@ -56,4 +61,5 @@ body {
   height: 15px;
   border-radius: 50%;
   border: 1px solid white;
+  cursor: pointer;
 }
