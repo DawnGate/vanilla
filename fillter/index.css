@@ -1,0 +1,74 @@
+body {
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.leftMenu {
+  flex: 1;
+}
+
+.content {
+  flex: 4;
+}
+
+.searchBox {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid gray;
+}
+
+.h1 {
+  font-size: 30px;
+  color: #555;
+  font-weight: 300;
+}
+
+.cats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cat {
+  font-style: 20px;
+  font-weight: 300;
+  color: #333;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+img {
+  width: 150px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.productName,
+.productValue {
+  font-weight: 300;
+}
