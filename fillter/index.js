@@ -98,3 +98,23 @@ const showCategories = () => {
 };
 
 showCategories();
+
+const setPrices = () => {
+  const arrPrices = data.map((item) => item.price);
+  const minValue = Math.min(...arrPrices);
+  const maxValue = Math.max(...arrPrices);
+
+  rangeInput.min = minValue;
+  rangeInput.max = maxValue;
+  rangeInput.value = maxValue;
+
+  rangeValue.textContent = `${maxValue}$`;
+
+  rangeInput.addEventListener("input", (e) => {
+    const newPriceFiltered = e.target.value;
+    rangeValue.textContent = `${newPriceFiltered}$`;
+    showProducts(data.filter((item) => item.price <= newPriceFiltered));
+  });
+};
+
+setPrices();
